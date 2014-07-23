@@ -1,4 +1,5 @@
 require 'color'
+require 'geokdtree'
 
 module Shade
   class Palette
