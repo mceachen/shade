@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'shade'
+require 'shade/cli'
+
+Shade::CLI.new(ARGV).convert_files

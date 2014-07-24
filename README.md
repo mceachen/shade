@@ -10,6 +10,14 @@ Rubygem to find the closest color from a given palette.
 This was created to help migrate Twitter's Advertising webapp from more than a thousand
 different colors into a small well-considered palette of colors. 
 
+Both the [CIE76 color difference algorithm](http://en.wikipedia.org/wiki/Color_difference#CIE76), via
+`Shade::Palette.nearest_value`, and the 
+[CIE94 color difference algorithm](http://en.wikipedia.org/wiki/Color_difference#CIE94), via 
+`Shade::Palette.nearest_value_cie94` implementations are available.
+
+The CIE94 implementation is slower, but may have better results, as saturation perception is better
+accounted for in that algorithm. 
+
 ## Installation
 
 Add this line to your application's Gemfile:
